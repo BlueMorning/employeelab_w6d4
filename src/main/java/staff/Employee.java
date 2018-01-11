@@ -16,4 +16,24 @@ public class Employee {
     public String getName() {
         return this.name;
     }
+
+    public int getNiNumber() {
+        return this.niNumber;
+    }
+
+    public int getSalary() {
+        return this.salary;
+    }
+
+    public int raiseSalary(Double percentage) {
+        if (percentage > 0) {
+            this.salary = (int)(this.salary * (1 + percentage));
+        }
+        return this.salary;
+    }
+
+
+    public Double payBonus(double percentage) {
+        return percentage * this.salary;
+    }
 }
