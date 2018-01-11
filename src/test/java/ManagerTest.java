@@ -10,11 +10,11 @@ public class ManagerTest {
 
     @Before
     public void before(){
-        manager = new Manager("Tony Blair", 654321, 75000, "Larceny");
+        manager = new Manager("Jonhny Flair", 654321, 75000, "Liberty");
     }
 
     @Test
     public void hasDeptName(){
-        assertEquals("Larceny", manager.getDeptName());
+        assertEquals("Liberty", manager.getDeptName());
     }
 }
