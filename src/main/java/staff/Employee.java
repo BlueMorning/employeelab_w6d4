@@ -4,7 +4,7 @@ public class Employee {
 
     private String name;
     private int niNumber;
-    private int salary;
+    protected int salary;
 
 
     public Employee(String name, int niNumber, int salary) {
@@ -33,7 +33,13 @@ public class Employee {
     }
 
 
-    public Double payBonus(double percentage) {
-        return percentage * this.salary;
+    public Double payBonus() {
+        return 0.01 * this.salary;
+    }
+
+    public void setName(String name) {
+        if(name != null) {
+            this.name = name;
+        }
     }
 }

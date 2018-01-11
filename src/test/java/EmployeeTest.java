@@ -37,6 +37,14 @@ public class EmployeeTest {
 
     @Test
     public void canPayBonus(){
-        assertEquals(new Double(300), employee.payBonus(0.01));
+        assertEquals(new Double(300), employee.payBonus());
+    }
+
+    @Test
+    public void canChangeName(){
+        employee.setName("Armando Iannucci");
+        assertEquals("Armando Iannucci", employee.getName());
+        employee.setName(null);
+        assertEquals("Armando Iannucci", employee.getName());
     }
 }
